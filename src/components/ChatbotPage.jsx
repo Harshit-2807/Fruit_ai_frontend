@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import fruitData from './fruitData.json';  // Import the JSON data
+import boticon from "../assets/bot-icon.jpeg"
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
@@ -58,13 +59,13 @@ const Chatbot = () => {
       {/* Left section for chat window (70%) */}
       <div className="flex-1 flex flex-col">
         <div className="mx-auto mt-4 mb-4 max-w-2xl bg-white shadow-lg rounded-lg flex flex-col h-[calc(100vh-80px)] overflow-hidden">
-          <div className="sticky top-0 bg-blue-500 p-4 shadow-md flex items-center">
+          <div className="sticky top-0 bg-chat-header p-4 shadow-md flex items-center">
             <img
-              src="https://via.placeholder.com/40"  // Replace with the URL of your bot image
+              src={boticon}  // Replace with the URL of your bot image
               alt="Bot"
               className="w-10 h-10 rounded-full mr-3"
             />
-            <h1 className="text-white text-xl font-semibold">Fruit.ai</h1>
+            <h1 className="text-white text-2xl font-dosis font-semibold">Fruit.ai</h1>
           </div>
           <div className="flex-1 overflow-y-auto p-6">
             {messages.map((message, index) => (
@@ -88,9 +89,9 @@ const Chatbot = () => {
       </div>
 
       {/* Right section for fruit list (30%) */}
-      <div className="w-3/12 bg-green-50 p-4 shadow-lg h-full overflow-y-auto">
+      <div className="w-3/12 bg-green-50 font-dosis p-4 shadow-lg h-full overflow-y-auto">
         <div className="sticky top-0 bg-green-50 p-4 shadow-md">
-          <h2 className="text-xl font-semibold text-gray-800">Fruits List</h2>
+          <h2 className="text-xl text-center font-semibold text-gray-800">Fruits List</h2>
         </div>
         <div className="flex flex-col">
           {renderFruitList()}

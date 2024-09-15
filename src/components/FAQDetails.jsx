@@ -8,13 +8,13 @@ const FAQDetails = ({ faq, deleteFaq, onEdit }) => {
       <div className="flex justify-between">
         <button
           onClick={() => onEdit(faq)}  // Pass the FAQ to the edit handler
-          className="bg-green-500 text-white py-1 px-4 rounded hover:bg-green-600"
+          className="bg-cool-gradientr text-white py-1 px-4 rounded hover:text-blue-200"
         >
           Edit
         </button>
         <button
           onClick={() => deleteFaq(faq.id)}
-          className="bg-red-500 text-white py-1 px-4 rounded hover:bg-red-600"
+          className="bg-red-gradient text-white py-1 px-4 rounded hover:text-red-600"
         >
           Delete
         </button>

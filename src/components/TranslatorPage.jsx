@@ -68,7 +68,7 @@ const TranslatorPage = () => {
             {/* Translate Button */}
             <button 
               onClick={handleTranslate}
-              className='bg-blue-500 text-white text-lg py-2 px-4 rounded hover:bg-blue-700'
+              className='bg-black-shadow2 text-white text-lg py-2 px-4 rounded hover:bg-blue-700'
             >
               Translate
             </button>
