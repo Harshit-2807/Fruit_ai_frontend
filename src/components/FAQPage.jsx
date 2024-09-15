@@ -5,6 +5,7 @@ import FAQForm from './FAQForm';
 
 const FAQPage = () => {
   const [faqs, setFaqs] = useState([]);  // Initialize FAQs as an empty array
+  const [loading, setLoading] = useState(true);  // Add a loading state
   const [showForm, setShowForm] = useState(false);  // Toggle between form and list
   const [editingFaq, setEditingFaq] = useState(null);  // Holds the FAQ to be edited
 
@@ -13,8 +14,12 @@ const FAQPage = () => {
     axios.get('https://fruit-ai-backend-ccvx.onrender.com/faqs')
       .then(response => {
         setFaqs(Array.isArray(response.data) ? response.data : []);
+        setLoading(false);  // Set loading to false once data is fetched
       })
-      .catch(error => console.error('Error fetching FAQs:', error));
+      .catch(error => {
+        console.error('Error fetching FAQs:', error);
+        setLoading(false);  // Set loading to false even if there is an error
+      });
   }, []);
 
   // Handle delete
@@ -69,7 +74,13 @@ const FAQPage = () => {
         </button>
       </div>
 
-      {showForm ? (
+      {loading ? (
+        // Show the loader when data is being fetched
+        <div className="flex justify-center items-center">
+          <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
+          <span className="ml-4 text-xl font-semibold">Loading...</span>
+        </div>
+      ) : showForm ? (
         <FAQForm onSubmit={handleFormSubmit} initialData={editingFaq} />
       ) : (
         <FAQList faqs={faqs} deleteFaq={deleteFaq} onEdit={handleEditClick} />
