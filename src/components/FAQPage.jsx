@@ -10,7 +10,7 @@ const FAQPage = () => {
 
   // Fetch all FAQs
   useEffect(() => {
-    axios.get('http://127.0.0.1:5000/faqs')
+    axios.get('https://fruit-ai-backend-ccvx.onrender.com/faqs')
       .then(response => {
         setFaqs(Array.isArray(response.data) ? response.data : []);
       })
@@ -19,7 +19,7 @@ const FAQPage = () => {
 
   // Handle delete
   const deleteFaq = (id) => {
-    axios.delete(`http://127.0.0.1:5000/faqs/${id}`)
+    axios.delete(`https://fruit-ai-backend-ccvx.onrender.com/faqs/${id}`)
       .then(() => {
         setFaqs(faqs.filter(faq => faq.id !== id));
       })
@@ -30,7 +30,7 @@ const FAQPage = () => {
   const handleFormSubmit = (faq) => {
     if (editingFaq) {
       // If editing, send PUT request to update the FAQ
-      axios.put(`http://127.0.0.1:5000/faqs/${editingFaq.id}`, faq)
+      axios.put(`https://fruit-ai-backend-ccvx.onrender.com/faqs/${editingFaq.id}`, faq)
         .then((response) => {
           setFaqs(faqs.map(f => (f.id === editingFaq.id ? response.data : f)));  // Update the FAQ in the list
           setShowForm(false);
@@ -39,7 +39,7 @@ const FAQPage = () => {
         .catch(error => console.error('Error updating FAQ:', error));
     } else {
       // If creating, send POST request to create new FAQ
-      axios.post('http://127.0.0.1:5000/faqs', faq)
+      axios.post('https://fruit-ai-backend-ccvx.onrender.com/faqs', faq)
         .then((response) => {
           setFaqs([...faqs, response.data]);  // Add the newly created FAQ to the list
           setShowForm(false);
