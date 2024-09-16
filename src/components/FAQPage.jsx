@@ -60,7 +60,7 @@ const FAQPage = () => {
   };
 
   return (
-    <div className="container mx-auto pt-12">
+    <div className="container pt-12 mx-auto max-w-[94vw]">
       <div className="flex justify-between items-center mb-10">
         <h1 className="text-4xl font-dosis font-bold">Frequently Asked Questions</h1>
         <button
