@@ -22,11 +22,11 @@ const Chatbot = () => {
     return fruitData.fruits.map(fruit => (
       <button
         key={fruit.name}
-        className="flex items-center w-full text-left px-4 py-3 bg-green-400 text-white hover:bg-green-500 transition"
+        className="flex items-center w-full text-left px-4 py-3 bg-chat-header text-white hover:bg-green-500 transition"
         onClick={() => handleFruitClick(fruit)}
       >
         <img
-          src={fruit.icon}  // Assume fruitData contains an "icon" field for each fruit's icon image
+          src={fruit.image}  // Assume fruitData contains an "icon" field for each fruit's icon image
           alt={fruit.name}
           className="w-10 h-10 mr-3 rounded-full object-cover shadow-md"
         />

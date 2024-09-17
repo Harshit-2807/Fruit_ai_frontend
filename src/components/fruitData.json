@@ -3,31 +3,31 @@
       {
         "name": "Apple",
         "description": "Apples are crisp and delicious, known for their high fiber content and antioxidant properties.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg",
+        "image": "https://images.pexels.com/photos/11564632/pexels-photo-11564632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Honeycrisp.jpg"
       },
       {
         "name": "Banana",
         "description": "Bananas are rich in potassium and provide a great source of quick energy. They are commonly used in smoothies and desserts.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg",
+        "image": "https://images.pexels.com/photos/2875814/pexels-photo-2875814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Banana_Fruit.JPG"
       },
       {
         "name": "Orange",
         "description": "Oranges are a great source of vitamin C, known for boosting the immune system and providing refreshing flavor.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg",
+        "image": "https://images.pexels.com/photos/2247142/pexels-photo-2247142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Orange-Whole-%26-Split.jpg"
       },
       {
         "name": "Strawberry",
         "description": "Strawberries are sweet and juicy, full of antioxidants and perfect for adding to desserts or smoothies.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg",
+        "image": "https://images.pexels.com/photos/6944172/pexels-photo-6944172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Cut_Strawberry.jpg"
       },
       {
         "name": "Grapes",
         "description": "Grapes are small, sweet, and come in various colors. They are rich in vitamins C and K, making them a healthy snack.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Kyoho-grape.jpg",
+        "image": "https://images.pexels.com/photos/60021/grapes-wine-fruit-vines-60021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Grapes_on_the_vine.jpg"
       },
       {
@@ -39,25 +39,25 @@
       {
         "name": "Watermelon",
         "description": "Watermelons are large and hydrating, perfect for summer snacks. They are rich in vitamins A, B6, and C.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Watermelon_cross_BNC.jpg",
+        "image": "https://images.pexels.com/photos/1337825/pexels-photo-1337825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/6/60/Watermelon_on_a_vine.jpg"
       },
       {
         "name": "Mango",
         "description": "Mangoes are tropical fruits known for their juicy, sweet, and vibrant flavor. They are high in vitamin C and A.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg",
+        "image": "https://www.tasteofhome.com/wp-content/uploads/2019/05/mangos-shutterstock_1090910984.jpg",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Mango.jpg"
       },
       {
         "name": "Kiwi",
         "description": "Kiwis are small fruits with a unique tangy taste. They are loaded with vitamin C and fiber, often used in salads.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Kiwi_aka.jpg",
+        "image": "https://images.costcobusinessdelivery.com/ImageDelivery/imageService?profileId=12028466&imageId=7953__1&recipeName=350",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/4/49/Kiwifruit_and_cross_section.jpg"
       },
       {
         "name": "Blueberry",
         "description": "Blueberries are small, sweet, and packed with antioxidants. They are great for improving memory and reducing inflammation.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Blueberries.jpg",
+        "image": "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/1/16/Berries_1.jpg"
       }
     ]
