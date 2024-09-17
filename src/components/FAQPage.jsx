@@ -76,10 +76,12 @@ const FAQPage = () => {
 
       {loading ? (
         // Show the loader when data is being fetched
-        <div className="flex justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
           <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
-          <span className="ml-4 text-xl font-semibold">Loading...</span>
+          <span className="mt-4 text-xl font-semibold">Loading...</span><br />
+          <div>If you are opening first time please wait for about a min as api call is on free server, so it may take time.</div>
         </div>
+        
       ) : showForm ? (
         <FAQForm onSubmit={handleFormSubmit} initialData={editingFaq} />
       ) : (
